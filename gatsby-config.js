@@ -1,10 +1,12 @@
 module.exports = {
   siteMetadata: {
     title: `Amigo Meu`,
-    description: `Um site para cuidar da saúde do seu pet.`,
+    position: `Um site para cuidar da saúde do seu pet.`,
+    description: `Todo o cuidado que seu melhor amigo merece.`,
     author: `@AmigoMeu`,
   },
   plugins: [
+    `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-source-filesystem`,
