@@ -1,18 +1,54 @@
 module.exports = {
   siteMetadata: {
     title: `Amigo Meu`,
-    position: `Um site para cuidar da saúde do seu pet.`,
-    description: `Todo o cuidado que seu melhor amigo merece.`,
-    author: `@AmigoMeu`,
+    position: `Um site para cuidar da saúde do seu pet`,
+    description: `Todo o Cuidado  que seu melhor amigo merece.`,
+    author: `@Amigo-Meu`,
   },
   plugins: [
     `gatsby-plugin-styled-components`,
     `gatsby-plugin-react-helmet`,
+    // needs to be the first to work with gatsby-remark-images
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `uploads`,
+        path: `${__dirname}/static/assets/img`,
+      },
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `posts`,
+        path: `${__dirname}/posts`,
+      },
+    },
+    {
+      resolve: `gatsby-transformer-remark`,
+      options: {
+        plugins: [
+          {
+            resolve: "gatsby-remark-relative-images",
+            options: {
+              name: "uploads",
+            },
+          },
+          {
+            resolve: "gatsby-remark-images",
+            options: {
+              maxWidth: 960,
+              linkImagesToOriginal: false,
+            },
+          },
+          `gatsby-remark-lazy-load`,
+        ],
       },
     },
     `gatsby-transformer-sharp`,
