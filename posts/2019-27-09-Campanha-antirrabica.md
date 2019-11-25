@@ -6,6 +6,8 @@ category: Leia
 background: "#7AAB13"
 ---
 
+
+
 # Campanha antirrabica abre vacinaçao para caes e gatos em Fortaleza
 
 Cães e gatos já estão sendo recebidos para vacinação na Campanha Antirrábica 2019 da Prefeitura de Fortaleza, que começou nesta sexta-feira (27), às 8h, no Parque do Cocó, com shows de adestradores e dos cães da Polícia Militar. Também faz parte do evento abordagens educativas e sorteio de brindes.
@@ -19,7 +21,8 @@ Há 16 anos, conforme o órgão, não há registro da doença em seres humanos e
 
 Entre os sintomas pode haver o surgimento repentino de comportamento agressivo, salivação excessiva e paralisia. A doença afeta o sistema nervoso central, instalando-se no cérebro e, assim, ocasiona a encefalite que é uma inflamação do cérebro. Os principais transmissores são os animais silvestres, como morcegos, saguis (soim), raposa e macacos, que contaminam cachorros, gatos e humanos de forma acidental.
 
-![EkosSpet](/assets/img/EkoSpet.PNG)
+
+
 
 ## Nesta sexta:
 
