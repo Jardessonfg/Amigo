@@ -4,10 +4,11 @@ const queries = require("./src/utils/algolia_queries")
 
 module.exports = {
   siteMetadata: {
-    title: `John Doe`,
-    position: `Backend Developer`,
-    description: `A blog about backend development and other cool stuff.`,
-    author: `@myblog`,
+    title: `Amigo Meu`,
+    position: `Um site para cuidar da saúde do seu pet`,
+    description: `Todo o cuidado que seu melhor amigo merece.`,
+    author: `Amigo Meu`,
+    siteUrl: `https://amigomeu.com.br`,
   },
   plugins: [
     `gatsby-plugin-transition-link`,
@@ -59,8 +60,9 @@ module.exports = {
         icon: `src/images/gatsby-icon.png`, // This path is relative to the root of the site.
       },
     },
+    `gatsby-plugin-sitemap`
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    //`gatsby-plugin-offline`,
   ],
 }
